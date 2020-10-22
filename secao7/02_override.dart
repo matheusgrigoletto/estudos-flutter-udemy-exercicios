@@ -1,5 +1,4 @@
 class Animal {
-
   String name;
   double weight;
 
@@ -17,11 +16,9 @@ class Animal {
   String toString() {
     return "Animal | Nome: ${this.name}, Peso: ${this.weight}";
   }
-
 }
 
 class Dog extends Animal {
-
   int cuteness;
 
   Dog(String name, double weight, this.cuteness) : super(name, weight);
@@ -40,11 +37,9 @@ class Dog extends Animal {
   String toString() {
     return "Cachorro | Nome: ${this.name}, Peso: ${this.weight}, Fofura: ${this.cuteness}";
   }
-
 }
 
 class Cat extends Animal {
-
   Cat(String name, double weight) : super(name, weight);
 
   bool isFriendly() {
@@ -60,9 +55,7 @@ class Cat extends Animal {
   String toString() {
     return "Gato | Nome: ${this.name}, Peso: ${this.weight}, Amigável: ${this.isFriendly()}";
   }
-
 }
-
 
 void main() {
   Animal animal1 = Animal("Rex", 20.0);

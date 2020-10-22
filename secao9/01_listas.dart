@@ -30,5 +30,4 @@ void main() {
   for (Person p in people) {
     print(p.name);
   }
-
 }

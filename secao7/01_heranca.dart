@@ -1,5 +1,4 @@
 class Animal {
-
   String name;
   double weight;
 
@@ -12,32 +11,30 @@ class Animal {
   void makeSound() {
     print("${this.name} fez algum som!");
   }
-
 }
 
 class Dog extends Animal {
+  int cuteness = 0;
 
-  int cuteness;
-
-  Dog(String name, double weight, this.cuteness) : super(name, weight);
+  // Dog(String name, double weight, this.cuteness) : super(name, weight);
+  Dog(String name, double weight, this.cuteness) : super(name, weight) {
+    this.cuteness += 100;
+    print("AUUUU, ${this.cuteness} de fofura");
+  }
 
   void play() {
     this.cuteness += 10;
     print("Fofura do ${this.name} aumentou para ${this.cuteness}!!!");
   }
-
 }
 
 class Cat extends Animal {
-
   Cat(String name, double weight) : super(name, weight);
 
   bool isFriendly() {
     return true;
   }
-
 }
-
 
 void main() {
   Animal animal1 = Animal("Rex", 20.0);
